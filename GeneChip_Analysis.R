@@ -20,9 +20,9 @@ names <- s$id   # id of samples
 ################## get normalized counts #########################
 (celFiles <- list.celfiles(getwd())) # get list of cel files
 affyGeneFS <- read.celfiles(celFiles,verbose=TRUE) # read celFiles
-con2 = db(pd.mogene.2.0.st) # db connection
-eset = rma(affyGeneFS, target='core') # # rma normalization GeneFeatureSet
-eset = rma(affyGeneFS) # # rma normalization ExpressionFeatureSet
+con2 <- db(pd.mogene.2.0.st) # db connection
+eset <- rma(affyGeneFS, target='core') # # rma normalization GeneFeatureSet
+eset <- rma(affyGeneFS) # # rma normalization ExpressionFeatureSet
 
 expr.unnorm <- exprs(affyGeneFS) # contains unnormalized counts of all genes
 expr <- exprs(eset) #contains normalized counts of all genes
