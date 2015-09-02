@@ -1,0 +1,11 @@
+Package: OligoTools
+Type: Package
+Title: Extra Tools to help process Oligo Arrays
+Version: 1.2
+Date: 2014-12-05
+Author: Mike Morley
+Maintainer: Mike Morley <yourfault@somewhere.net>
+Description: Extra Tools to help process Oligo Arrays
+License: MIT
+Depends:
+    oligo,genefilter,annotate
